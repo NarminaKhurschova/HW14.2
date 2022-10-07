@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Жанры</title>
+</head>
+<body>
+    <h1><u>Жанр: {{genre}}</u></h1>
+    <ol>
+        {%for movie in list_of_movies_dict%}
+            <li>{{movie.title}} : {{movie.rating}}, {{movie.description}}</li>
+        {%endfor%}
+    </ol>>
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Найдено: {{list_mov|length}}</title>
+</head>
+<body>
+    <section>
+        <ol>
+            {% for mov in list_mov %}
+
+                <li>{{mov.title}} : {{mov.release_year}}</li>
+
+            {% endfor %}
+        </ol>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>О фильме</title>
+</head>
+<body>
+    <class>
+        <p><h1>{{about_movie.title}}</h1></p>
+        <ul>
+            {% for key,val in about_movie.items() %}
+
+                <li><h3><u>{{key}}</u></h3>{{val}}</li>
+
+            {% endfor %}
+        </ul>
+    </class>
+</body>
+</html>

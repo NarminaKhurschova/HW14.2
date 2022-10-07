@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Семейные</title>
+</head>
+<body>
+    <h2><u>Фильмы для Семейного просмотра</u></h2>
+    <ol>
+        {%for movie in movies_for_family%}
+            <li>{{movie.title}} : {{movie.rating}}, {{movie.description}}</li>
+        {%endfor%}
+    </ol>>
+</body>
+</html>
